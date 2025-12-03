@@ -1,0 +1,65 @@
+Starting MPI benchmark...
+Running 5 trials for each configuration
+
+Detected 12 CPU cores
+
+=========================================
+Testing with 1 process(es)
+=========================================
+  Run 1/5...
+    Time: 1.6038s, Iterations: 67
+  Run 2/5...
+    Time: 1.5960s, Iterations: 67
+  Run 3/5...
+    Time: 1.6067s, Iterations: 67
+  Run 4/5...
+    Time: 1.5715s, Iterations: 67
+  Run 5/5...
+    Time: 1.5756s, Iterations: 67
+  Average time: 1.5907s
+
+=========================================
+Testing with 2 process(es)
+=========================================
+  Run 1/5...
+    Time: 0.8180s, Iterations: 67
+  Run 2/5...
+    Time: 0.8193s, Iterations: 67
+  Run 3/5...
+    Time: 0.8054s, Iterations: 67
+  Run 4/5...
+    Time: 0.8183s, Iterations: 67
+  Run 5/5...
+    Time: 0.8009s, Iterations: 67
+  Average time: 0.8124s
+
+=========================================
+Testing with 4 process(es)
+=========================================
+  Run 1/5...
+    Time: 0.4459s, Iterations: 67
+  Run 2/5...
+    Time: 0.4433s, Iterations: 67
+  Run 3/5...
+    Time: 0.4464s, Iterations: 67
+  Run 4/5...
+    Time: 0.4837s, Iterations: 67
+  Run 5/5...
+    Time: 0.4868s, Iterations: 67
+  Average time: 0.4612s
+
+=========================================
+Benchmark Complete!
+=========================================
+
+Summary of Results:
+-------------------
+Processes    Avg Time (s)    Speedup         Efficiency     
+1            1.5907          1.00x           100.00%        
+2            0.8124          1.95x           97.00%         
+4            0.4612          3.44x           86.00%         
+
+Results saved to:
+  - CSV data: results_mpi/mpi_results.csv
+  - Log file: results_mpi/mpi_benchmark.log
+

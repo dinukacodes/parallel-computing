@@ -1,0 +1,120 @@
+Starting CUDA benchmark...
+Running 5 trials for each configuration
+
+GPU Information:
+NVIDIA GeForce RTX 2050, 8.6, 4096 MiB
+
+=========================================
+Testing with 64 threads per block
+=========================================
+  Run 1/5...
+    Time: 0.1444s, Iterations: 67
+  Run 2/5...
+    Time: 0.1298s, Iterations: 67
+  Run 3/5...
+    Time: 0.1298s, Iterations: 67
+  Run 4/5...
+    Time: 0.1275s, Iterations: 67
+  Run 5/5...
+    Time: 0.1277s, Iterations: 67
+  Average time: 0.1318s
+
+=========================================
+Testing with 128 threads per block
+=========================================
+  Run 1/5...
+    Time: 0.1168s, Iterations: 67
+  Run 2/5...
+    Time: 0.1154s, Iterations: 67
+  Run 3/5...
+    Time: 0.1179s, Iterations: 67
+  Run 4/5...
+    Time: 0.1168s, Iterations: 67
+  Run 5/5...
+    Time: 0.1183s, Iterations: 67
+  Average time: 0.1170s
+
+=========================================
+Testing with 256 threads per block
+=========================================
+  Run 1/5...
+    Time: 0.1197s, Iterations: 67
+  Run 2/5...
+    Time: 0.1214s, Iterations: 67
+  Run 3/5...
+    Time: 0.1188s, Iterations: 67
+  Run 4/5...
+    Time: 0.1192s, Iterations: 67
+  Run 5/5...
+    Time: 0.1195s, Iterations: 67
+  Average time: 0.1197s
+
+=========================================
+Testing with 512 threads per block
+=========================================
+  Run 1/5...
+    Time: 0.1392s, Iterations: 67
+  Run 2/5...
+    Time: 0.1360s, Iterations: 67
+  Run 3/5...
+    Time: 0.1384s, Iterations: 67
+  Run 4/5...
+    Time: 0.1403s, Iterations: 67
+  Run 5/5...
+    Time: 0.1378s, Iterations: 67
+  Average time: 0.1383s
+
+=========================================
+Testing with 768 threads per block
+=========================================
+  Run 1/5...
+    Time: 0.1684s, Iterations: 67
+  Run 2/5...
+    Time: 0.1672s, Iterations: 67
+  Run 3/5...
+    Time: 0.1667s, Iterations: 67
+  Run 4/5...
+    Time: 0.1676s, Iterations: 67
+  Run 5/5...
+    Time: 0.1692s, Iterations: 67
+  Average time: 0.1678s
+
+=========================================
+Testing with 1024 threads per block
+=========================================
+  Run 1/5...
+    Time: 0.2621s, Iterations: 67
+  Run 2/5...
+    Time: 0.2618s, Iterations: 67
+  Run 3/5...
+    Time: 0.2636s, Iterations: 67
+  Run 4/5...
+    Time: 0.2571s, Iterations: 67
+  Run 5/5...
+    Time: 0.2615s, Iterations: 67
+  Average time: 0.2612s
+
+=========================================
+Benchmark Complete!
+=========================================
+
+Summary of Results:
+-------------------
+Threads/Block      Avg Time (s)    Relative Performance
+64                 0.1318          88.00%              
+128                0.1170          100.00%             
+256                0.1197          97.00%              
+512                0.1383          84.00%              
+768                0.1678          69.00%              
+1024               0.2612          44.00%              
+
+Comparison with Serial CPU:
+---------------------------
+Serial CPU time: 1.7576s
+Best CUDA time: 0.11704s
+GPU Speedup: 15.01x faster than CPU
+
+Results saved to:
+  - CSV data: results_cuda/cuda_results.csv
+  - Log file: results_cuda/cuda_benchmark.log
+

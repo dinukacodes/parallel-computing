@@ -1,0 +1,95 @@
+Starting OpenMP benchmark...
+Running 5 trials for each configuration
+
+=========================================
+Testing with 1 thread(s)
+=========================================
+  Run 1/5...
+    Time: 1.7290s, Iterations: 67
+  Run 2/5...
+    Time: 1.7715s, Iterations: 67
+  Run 3/5...
+    Time: 1.7904s, Iterations: 67
+  Run 4/5...
+    Time: 1.7509s, Iterations: 67
+  Run 5/5...
+    Time: 1.7464s, Iterations: 67
+  Average time: 1.7576s
+
+=========================================
+Testing with 2 thread(s)
+=========================================
+  Run 1/5...
+    Time: 0.8820s, Iterations: 67
+  Run 2/5...
+    Time: 0.9301s, Iterations: 67
+  Run 3/5...
+    Time: 0.8974s, Iterations: 67
+  Run 4/5...
+    Time: 0.9141s, Iterations: 67
+  Run 5/5...
+    Time: 0.9740s, Iterations: 67
+  Average time: 0.9195s
+
+=========================================
+Testing with 4 thread(s)
+=========================================
+  Run 1/5...
+    Time: 0.4938s, Iterations: 67
+  Run 2/5...
+    Time: 0.4943s, Iterations: 67
+  Run 3/5...
+    Time: 0.4907s, Iterations: 67
+  Run 4/5...
+    Time: 0.4714s, Iterations: 67
+  Run 5/5...
+    Time: 0.4791s, Iterations: 67
+  Average time: 0.4859s
+
+=========================================
+Testing with 8 thread(s)
+=========================================
+  Run 1/5...
+    Time: 0.2945s, Iterations: 67
+  Run 2/5...
+    Time: 0.3045s, Iterations: 67
+  Run 3/5...
+    Time: 0.3129s, Iterations: 67
+  Run 4/5...
+    Time: 0.2995s, Iterations: 67
+  Run 5/5...
+    Time: 0.3167s, Iterations: 67
+  Average time: 0.3056s
+
+=========================================
+Testing with 16 thread(s)
+=========================================
+  Run 1/5...
+    Time: 0.2970s, Iterations: 67
+  Run 2/5...
+    Time: 0.2998s, Iterations: 67
+  Run 3/5...
+    Time: 0.2967s, Iterations: 67
+  Run 4/5...
+    Time: 0.3072s, Iterations: 67
+  Run 5/5...
+    Time: 0.3001s, Iterations: 67
+  Average time: 0.3002s
+
+=========================================
+Benchmark Complete!
+=========================================
+
+Summary of Results:
+-------------------
+Threads    Avg Time (s)    Speedup        
+1          1.7576          1.00x          
+2          0.9195          1.91x          
+4          0.4859          3.61x          
+8          0.3056          5.75x          
+16         0.3002          5.85x          
+
+Results saved to:
+  - CSV data: results_openmp/openmp_results.csv
+  - Log file: results_openmp/openmp_benchmark.log
+
