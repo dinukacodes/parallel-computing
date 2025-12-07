@@ -57,3 +57,6 @@ nvcc -arch=sm_86 -O3 -o kmeans_cuda.exe file.cu -lm
 ```
 
 Scripts such as `cuda.sh`, `mpi.sh`, and `omp.sh` are provided in the root and in `benchmarking/` to automate runs — make sure scripts have executable permissions on Unix systems.
+
+Serial Algorithm approval documents:
+https://drive.google.com/drive/folders/1XDQfh4lw-sNtWTuc-4_lPOeNmhevAPL7?usp=sharing
