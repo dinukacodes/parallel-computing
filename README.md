@@ -1,11 +1,5 @@
 # K-means Clustering: Parallel Implementations
 
-This repository contains multiple parallel implementations of the K-means clustering algorithm and supporting scripts for benchmarking and results. The README has been updated to reflect the actual project layout in this workspace and to show how to include screenshots/images so they render on GitHub.
-
-**Quick notes**:
-- **Files in this repo:** compile/run the source files present in the root (see structure below).
-- **To display images on GitHub:** add image files to the `screenshots/` folder and commit them; reference them with relative paths in Markdown (examples below).
-
 ## Repository Structure (actual)
 
 ```
@@ -63,34 +57,3 @@ nvcc -arch=sm_86 -O3 -o kmeans_cuda.exe file.cu -lm
 ```
 
 Scripts such as `cuda.sh`, `mpi.sh`, and `omp.sh` are provided in the root and in `benchmarking/` to automate runs — make sure scripts have executable permissions on Unix systems.
-
-## Screenshots & Images (show on GitHub)
-
-Place image files (PNG, JPG, GIF) into the `screenshots/` folder and commit them. Then reference them using relative paths so GitHub renders them in the README. Examples:
-
-```markdown
-![Clustering result example](screenshots/clustering_example.png)
-![Performance plot](screenshots/perf_plot.png)
-```
-
-If you don't yet have images, add a placeholder or create and commit them later — GitHub will show them automatically when pushed to the repository.
-
-## Results & Benchmarks
-
-Timing and plotting artifacts are stored under `results_cuda/`, `results_mpi/`, and `results_openmp/`.
-
-Use the benchmarking scripts in `benchmarking/` to reproduce experiments. Example (PowerShell):
-
-```powershell
-cd benchmarking
-./run_tests.sh
-```
-
-## Suggested Next Steps
-
-- Add real screenshots into `screenshots/` (e.g., `clustering_example.png`, `perf_plot.png`) and commit them to enable inline display in this README.
-- Run `run_tests.sh` or the scripts in `benchmarking/` to generate up-to-date results.
-- If you want, I can commit these README changes and/or add example placeholder images.
-
----
-If you'd like, I can now (1) add placeholder screenshots, (2) commit these changes, or (3) run the benchmarking scripts and attach result summaries — tell me which you prefer.
